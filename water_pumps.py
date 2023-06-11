@@ -72,3 +72,5 @@ for p in pumps:
 
 print("\nTotal flow\t", total_flow)
 print("\nTotal cost\t", total_cost, "\n")
+
+print(bqm)
