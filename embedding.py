@@ -1,11 +1,11 @@
 from dwave.system.samplers import DWaveSampler
-from dwave.system.composites import LazyFixedEmbeddingComposite
+from dwave.system.composites import LazyEmbeddingComposite
 
 chainstrength = 4
 
 Q = { (0, 0): 2, (0, 1): -2, (0, 2): -2, (1, 2): 2}
 
-sampler = LazyFixedEmbeddingComposite(DWaveSampler())
+sampler = LazyEmbeddingComposite(DWaveSampler())
 response = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=100)
 print(sampler.properties['embedding'])
 
