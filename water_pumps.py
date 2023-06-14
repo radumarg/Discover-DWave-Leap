@@ -1,4 +1,5 @@
 from dwave.system import DWaveSampler, EmbeddingComposite
+from dwave import inspector
 from dimod import BinaryQuadraticModel
 
 # setup scenario
@@ -74,3 +75,5 @@ print("\nTotal flow\t", total_flow)
 print("\nTotal cost\t", total_cost, "\n")
 
 print(bqm)
+
+inspector.show(sampleset)   
