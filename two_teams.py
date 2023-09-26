@@ -26,4 +26,4 @@ sampleset = sampler.sample_qubo(Q, num_reads=10, chain_strength = 10)
 
 print(sampleset)
 
-inspector.show(sampleset) 
+#inspector.show(sampleset) 
